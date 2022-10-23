@@ -419,7 +419,8 @@ public class Lib extends Spider {
                         if (player.getString("from").contains("LINE")) {
                             String videoUrl = pCfg.getString("pu") + player.getString("url");
                             Document docs = Jsoup.parse(OkHttpUtil.string(videoUrl, Headers()));
-                            Pattern pattern = Pattern.compile("(?<=urls\\s=\\s').*?(?=')");
+                            Pattern pattern = Pattern.compile("(?<=urls\\s=\\s\').*?(?=\')"
+);
                             Elements allScripts = docs.select("body script");
                             for (int j = 0; j < allScripts.size(); j++) {
                                 String scContents = allScripts.get(j).html().trim();
