@@ -57,7 +57,7 @@ public class Dy555 extends Spider {
 
     protected Pattern regexCategory = Pattern.compile("/vodtype/(\\d+).html");
     protected Pattern regexVoddetail = Pattern.compile("/voddetail/(\\d+).html");
-    protected Pattern regexPlay = Pattern.compile("/vodplay/(\\d+)-(\\d+)-(\\d+).html");
+    protected Pattern regexPlay = Pattern.compile("/vodplay/(\\S+).html");
     protected Pattern regexPage = Pattern.compile("\\d+/(\\d+)");
 
 
