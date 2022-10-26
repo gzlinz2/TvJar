@@ -92,7 +92,7 @@ public class Cokemv extends Spider {
         try {
             Document doc = Jsoup.parse(OkHttpUtil.string(siteUrl, getHeaders(siteUrl)));
             // 分类节点
-            Elements elements = doc.select("ul.navbar-items>li.navbar-item>a");
+            Elements elements = doc.select("ul.navbar-items swiper-wrapper>li.swiper-slide navbar-item>a");
             JSONArray classes = new JSONArray();
             for (Element ele : elements) {
                 String name = ele.text();
