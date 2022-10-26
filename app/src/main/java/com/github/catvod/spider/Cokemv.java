@@ -393,7 +393,7 @@ public class Cokemv extends Spider {
             JSONObject result = new JSONObject();
             for (int i = 0; i < allScript.size(); i++) {
                 String scContent = allScript.get(i).html().trim();
-                if (scContent.startsWith("var player_")) { // 取直链
+                if (scContent.startsWith("var player_aaaa")) { // 取直链
                     int start = scContent.indexOf('{');
                     int end = scContent.lastIndexOf('}') + 1;
                     String json = scContent.substring(start, end);
