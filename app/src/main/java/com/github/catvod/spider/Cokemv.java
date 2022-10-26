@@ -211,7 +211,7 @@ public class Cokemv extends Spider {
             JSONArray videos = new JSONArray();
             if (!html.contains("没有找到您想要的结果哦")) {
                 // 取当前分类页的视频列表
-                Elements list = doc.select("div.module-main>div.module-items>a");
+                Elements list = doc.select("div.module-main>div.module-class-items>a");
                 for (int i = 0; i < list.size(); i++) {
                     Element vod = list.get(i);
                     String title = vod.attr("title");
