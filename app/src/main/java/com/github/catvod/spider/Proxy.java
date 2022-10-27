@@ -1,6 +1,3 @@
-//
-// Decompiled by Jadx - 589ms
-//
 package com.github.catvod.spider;
 
 import android.util.Base64;
@@ -57,9 +54,7 @@ public class Proxy extends Spider {
                 if (str.equals("push")) {
                     return PushAgent.vod(map);
                 }
-                if (str.equals("xBPQ")) {
-                    return xBPQ.loadPic(map);
-                }
+               
                 return null;
             }
         } catch (Throwable unused) {
