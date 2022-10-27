@@ -42,7 +42,8 @@ public class Proxy extends Spider {
                 if (type.equals("txt")) {
                     String ext = params.get("ext");
                     if (!ext.startsWith("http")) {
-                        ext = new String(Base64.decode(ext, Base64.DEFAULT | Base64.URL_SAFE | Base64.NO_WRAP), "UTF-8");
+                        ext = new String(Base64.decode(ext, Base64.DEFAULT | Base64.URL_SAFE | Base64.NO_WRAP), "UTF-8");} else if (what.equals("qq")) {
+                return QQ.
                     }
                     return TxtSubscribe.load(ext);
                 }
@@ -53,7 +54,8 @@ public class Proxy extends Spider {
                 ByteArrayInputStream baos = new ByteArrayInputStream("ok".getBytes("UTF-8"));
                 result[2] = baos;
                 return result;
-            
+            } else if (what.equals("qq")) {
+                return QQ.
             } else if (what.equals("czspp")) {
                 return Czsapp.loadsub(params.get("url"));
             }
