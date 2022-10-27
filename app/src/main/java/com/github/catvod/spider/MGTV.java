@@ -1,6 +1,3 @@
-//
-// Decompiled by Jadx - 658ms
-//
 package com.github.catvod.spider;
 
 import android.content.Context;
