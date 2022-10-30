@@ -96,8 +96,7 @@ public class Cokemv extends Spider {
             JSONArray classes = new JSONArray();
             for (Element ele : elements) {
                 String name = ele.text();
-                boolean show = name.equals("抖音電影") ||
-                        name.equals("电影") ||
+                boolean show = name.equals("电影") ||
                         name.equals("剧集") ||
                         name.equals("动漫") ||
                         name.equals("综艺");
