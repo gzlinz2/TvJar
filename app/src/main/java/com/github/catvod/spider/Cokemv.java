@@ -256,7 +256,7 @@ public class Cokemv extends Spider {
     public String detailContent(List<String> ids) {
         try {
             // 视频详情url
-            String url = siteUrl + "/voddetail/" + ids.get(0) + ".html";
+            String url = siteUrl + "/voddetail/" + id + ".html";
             Document doc = Jsoup.parse(OkHttpUtil.string(url, getHeaders(url)));
             JSONObject result = new JSONObject();
             JSONObject vodList = new JSONObject();
