@@ -92,7 +92,7 @@ public class Cokemv extends Spider {
             if (this.e8.length() > 0) {
                 headers.put("Cookie", this.e8);
             }
-        }
+        };
         
         headers.put("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
         headers.put("Accept-Language", "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2");
